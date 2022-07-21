@@ -386,6 +386,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             if (!_gameStart) {
                 gameStart();
             }
+            if (_gameStart &&! tar.id) {
             if (soundMode === 'on') {
                 createjs.Sound.play("tap");
             }
